@@ -1,4 +1,4 @@
-import calc as ca
+
 import sys
 from plotter import *
 
