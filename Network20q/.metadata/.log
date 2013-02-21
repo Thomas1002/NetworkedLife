@@ -1,0 +1,68 @@
+!SESSION 2013-02-21 15:51:19.912 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.6.0_27
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_GB
+Command-line arguments:  -os linux -ws gtk -arch x86 -data /home/thomas/Projects/Network20q
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2013-02-21 15:51:55.936
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2013-02-21 15:51:55.936
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-02-21 15:51:55.936
+!MESSAGE Software being installed: EGit Plug-in Import Support 2.2.0.201212191850-r (org.eclipse.egit.import.feature.group 2.2.0.201212191850-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-02-21 15:51:55.936
+!MESSAGE Missing requirement: EGit Plug-in Import Support 2.2.0.201212191850-r (org.eclipse.egit.import.feature.group 2.2.0.201212191850-r) requires 'org.eclipse.team.core 3.6.100' but it could not be found
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2013-02-21 15:51:55.939
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2013-02-21 15:51:55.939
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-02-21 15:51:55.939
+!MESSAGE Software being installed: EGit Plug-in Import Support 2.2.0.201212191850-r (org.eclipse.egit.import.feature.group 2.2.0.201212191850-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-02-21 15:51:55.939
+!MESSAGE Missing requirement: EGit Plug-in Import Support 2.2.0.201212191850-r (org.eclipse.egit.import.feature.group 2.2.0.201212191850-r) requires 'org.eclipse.team.core 3.6.100' but it could not be found
+!SESSION 2013-02-21 15:53:02.499 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.6.0_27
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_GB
+Command-line arguments:  -os linux -ws gtk -arch x86 -data /home/thomas/Projects/Network20q
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2013-02-21 15:57:16.407
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2013-02-21 15:57:16.407
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-02-21 15:57:16.407
+!MESSAGE Software being installed: EGit Plug-in Import Support 2.2.0.201212191850-r (org.eclipse.egit.import.feature.group 2.2.0.201212191850-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-02-21 15:57:16.407
+!MESSAGE Missing requirement: EGit Plug-in Import Support 2.2.0.201212191850-r (org.eclipse.egit.import.feature.group 2.2.0.201212191850-r) requires 'org.eclipse.team.core 3.6.100' but it could not be found
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2013-02-21 15:57:16.414
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2013-02-21 15:57:16.414
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-02-21 15:57:16.414
+!MESSAGE Software being installed: EGit Plug-in Import Support 2.2.0.201212191850-r (org.eclipse.egit.import.feature.group 2.2.0.201212191850-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-02-21 15:57:16.414
+!MESSAGE Missing requirement: EGit Plug-in Import Support 2.2.0.201212191850-r (org.eclipse.egit.import.feature.group 2.2.0.201212191850-r) requires 'org.eclipse.team.core 3.6.100' but it could not be found
+!SESSION 2013-02-21 16:14:03.465 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.6.0_27
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_GB
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.equinox.p2.operations 2 0 2013-02-21 16:14:43.323
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10001 2013-02-21 16:14:43.323
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10005 2013-02-21 16:14:43.323
+!MESSAGE "PyDev for Eclipse" will be ignored because it is already installed.
+
+!ENTRY org.eclipse.equinox.p2.operations 2 0 2013-02-21 16:14:43.327
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10001 2013-02-21 16:14:43.328
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10005 2013-02-21 16:14:43.328
+!MESSAGE "PyDev for Eclipse" will be ignored because it is already installed.
