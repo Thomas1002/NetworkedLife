@@ -1,0 +1,17 @@
+Plurality voting:	
+- A: 8
+- B: 12
+- C: 11
+Voting: B > C > A
+
+Condorcet voting:
+- A or B: 17 or 14 => A > B
+- A or C: 13 or 18 => C > A
+- B or C: 20 or 11 => B > C
+Voting: Cyclic 
+
+Borda count:
+A: 9 + 16 + 5 = 30
+B: 8 + 14 + 10 + 2 = 34
+C: 18 + 7 + 4 = 29
+Voting: B > A > C
