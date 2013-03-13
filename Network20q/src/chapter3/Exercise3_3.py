@@ -31,6 +31,37 @@ def compute(matrix, pi, theta):
     '''print local'''
   print pi
 
+def midterm():
+  m = np.array([[0.0, 0.0, 0.0, 0.5, 0.5, 0.0],
+                [0.0, 0.0, 0.0, 0.5, 0.5, 0.0],
+                [0.0, 0.0, 0.0, 0.5, 0.5, 0.0],
+                [0.0, 0.0, 1.0, 0.0, 0.0, 0.0],
+                [0.0, 0.0, 0.0, 0.5, 0.0, 0.5],
+                [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]])
+  w = np.matrix([[0,0,0,0,0,1]])
+  #c(m,w)
+  o = np.matrix([[1,1,1,1,1,1]])
+  hat = 1.0 / len(m) * np.multiply(w.T, o)
+  h = m + hat
+  print h
+  six = 1.0 / 6.0
+  pi = [six, six, six, six, six, six]
+  compute(h, pi, 0.85)
+  '''theta = [0.85]
+  for i in theta:
+    print 'Result for theta = %f' % (i)
+    compute(h, pi, i)
+  print 'We can see that as theta grows node 1 & 2 becomes the nodes with the largest in degree'
+  print 'The ranked order: 1,2,3,5,4'
+  '''
+
+def c(h, w):
+  ones = np.ones(len(h))
+  hhat = 1.0 / len(h) * (np.multiply(w, ones.transpose()))
+  v = h + hhat
+  print v
+  
+
 def main():
   thd = float(1.0/3.0)
   m = np.array([[0.0, 1.0, 0.0, 0.0, 0.0],
@@ -87,4 +118,9 @@ def compare(a,b):
   return 1
   
 if __name__ == '__main__':
-    main()
+  #midterm()
+    #main()
+  #print "next"
+  main2()
+  #print 'main'
+  #main()

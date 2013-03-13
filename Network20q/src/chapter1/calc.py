@@ -16,8 +16,9 @@ class Calc:
     for index in range(0, len(channelGain)):
       if (index != i):
         result =  channelGain[index] * power[index]
-        d = d + result  
-    value = power[i] / (d + self.noise)
+        d = d + result
+    value = power[i] / (d + self.noise[i])
+    #print '%f %f' % (i, self.noise[i])
     return value
   
   def calculatePowerLevel(self, power):
@@ -25,6 +26,7 @@ class Calc:
     for i in range(0, len(self.channelGains)):
       sir = self.calculateSIR(i, power)
       p = self.gamma[i] / sir * power[i]
+      
       result[0].append(sir)
       result[1].append(p)
     return result

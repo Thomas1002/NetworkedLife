@@ -4,6 +4,7 @@ Created on 22 Feb 2013
 @author: thomas
 '''
 import numpy as np
+import math as m
 
 def compute(a,c,r,R):
   np.set_printoptions(precision=2)
@@ -13,50 +14,21 @@ def compute(a,c,r,R):
   table = np.resize(np.array(0.0), (len(R), len(R[0])))
   
   for y in range(0,len(R)):
-    print len(R[y])
+    #print len(R[y])
     for x in range(0, len(R[y])):
       cell = r + result[0][y] + result[0][len(R)+x]
       '''+ result[0][len(R) + x]'''
-      print '%d,%d = %.2f' % (y,x,cell)
+      #print '%d,%d = %.2f' % (y,x,cell)
       if R[y][x] > 0:
         table[y][x] = cell
       ''' + result[y] + result[len(R)+x]'''
-  print table      
+  #print table      
   print 'R hat'
   np.set_printoptions(suppress=True)
-  print R - table
-  
+  print table
+  return table
 
-def main():
-  a = np.matrix([[1,0,0,0,0,1,0,0,0],
-                 [0,0,1,0,0,1,0,0,0],
-                 [0,0,0,1,0,1,0,0,0],
-                 [0,0,0,0,1,1,0,0,0],
-                 [0,1,0,0,0,0,1,0,0],
-                 [0,0,1,0,0,0,1,0,0],
-                 [0,0,0,1,0,0,1,0,0],
-                 [0,0,0,0,1,0,1,0,0],
-                 [1,0,0,0,0,0,0,1,0],
-                 [0,1,0,0,0,0,0,1,0],
-                 [0,0,1,0,0,0,0,1,0],
-                 [0,0,0,0,1,0,0,1,0],
-                 [1,0,0,0,0,0,0,0,1],
-                 [0,1,0,0,0,0,0,0,1],
-                 [0,0,1,0,0,0,0,0,1],
-                 [0,0,0,1,0,0,0,0,1],
-                 ])
-  r = 3.125
-  c = np.array([5-r,4-r,3-r,1-r, 
-                1-r,1-r,4-r,5-r,
-                5-r,1-r,2-r,3-r,
-                4-r,4-r,4-r,3-r ])
-  R = np.array([[5,-1,5,4],
-                 [-1,1,1,4],
-                 [4,1,2,4],
-                 [3,4,-1,3],
-                 [1,5,3,-1]])
-  compute(a,c,r,R)
-  
+
 def main2():
   a = np.matrix([[1,0,0,0,0,0,0,0,0,0,1,0,0,0,0],
                  [0,0,1,0,0,0,0,0,0,0,1,0,0,0,0],
@@ -102,8 +74,12 @@ def main2():
                  [5,3,4,0,5],
                  [4,2,5,4,0],
                  [5,0,5,3,4]])
-  compute(a,c,r,R)
+  m.nn
+  result = compute(a,c,r,R)
+  print 'R ~'
+  print R - result
   
 
 if __name__ == '__main__':
-    main()
+    main2()
+    #ex4()
