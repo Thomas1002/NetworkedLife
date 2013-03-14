@@ -7,9 +7,8 @@ import numpy as np
 import math as m
 
 def compute(a,c,r,R):
-  np.set_printoptions(precision=4)
-  
-  result = np.linalg.lstsq(a, c, 0.00001)
+  np.set_printoptions(precision=2)
+  result = np.linalg.lstsq(a, c)
   print result[0]
   table = np.resize(np.array(0.0), (len(R), len(R[0])))
   
@@ -19,8 +18,8 @@ def compute(a,c,r,R):
       cell = r + result[0][y] + result[0][len(R)+x]
       '''+ result[0][len(R) + x]'''
       #print '%d,%d = %.2f' % (y,x,cell)
-      #if R[y][x] > 0:
-      table[y][x] = cell
+      if R[y][x] > 0:
+        table[y][x] = cell
       ''' + result[y] + result[len(R)+x]'''
   #print table      
   print 'R hat'
@@ -29,7 +28,7 @@ def compute(a,c,r,R):
   return table
 
 
-def main2():
+def main():
   a = np.matrix([[1,0,0,0,0,0,0,0,0,0,1,0,0,0,0],
                  [0,0,1,0,0,0,0,0,0,0,1,0,0,0,0],
                  [0,0,0,0,1,0,0,0,0,0,1,0,0,0,0],
@@ -74,11 +73,14 @@ def main2():
                  [5,3,4,0,5],
                  [4,2,5,4,0],
                  [5,0,5,3,4]])
-  result = compute(a,c,r,R)
-  print 'R ~'
-  print R - result
+  np.set_printoptions(precision=3)
+  result = np.linalg.lstsq(a, c)[0]
+  print result
+  ##result = compute(a,c,r,R)
+#  print 'R ~'
+  #print R - result
   
 
 if __name__ == '__main__':
-    main2()
+    main()
     #ex4()

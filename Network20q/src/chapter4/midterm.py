@@ -33,7 +33,12 @@ if __name__ == '__main__':
   r = 3.125
   c = np.array([5-r,4-r,3-r,1-r, 1-r,1-r,4-r,5-r, 5-r,1-r,2-r,3-r, 4-r,4-r,4-r,3-r])
   
-  ex.compute(a,c,r,R)
+  result = np.linalg.lstsq(a, c, 0.0001)[0]
+  np.set_printoptions(precision=4)
+  #print result
+  r = ex.compute(a,c,r,R)
+  print 'R ~'
+  print R - r
   #result = np.linalg.lstsq(a, c) 
   #print np.linalg.pinv(a, c)
   #print "resultat"

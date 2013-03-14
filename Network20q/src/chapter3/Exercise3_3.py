@@ -30,6 +30,7 @@ def compute(matrix, pi, theta):
       pi = local
     '''print local'''
   print pi
+  print '%s -> %s' % (pi, np.array(pi.sort()))
 
 def midterm():
   m = np.array([[0.0, 0.0, 0.0, 0.5, 0.5, 0.0],
@@ -118,7 +119,7 @@ def compare(a,b):
   return 1
   
 if __name__ == '__main__':
-  #midterm()
+  midterm()
     #main()
   #print "next"
   main2()
